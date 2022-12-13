@@ -8,7 +8,7 @@ async function findDestinations(callback) {
   await client.connect();
   console.log("Connected successfully to server");
   const db = client.db(dbName);
-  const collection = db.collection("destinationsLight");
+  const collection = db.collection("destinationsLightMode");
 
   const findResult = await collection.find().toArray();
 
@@ -19,7 +19,7 @@ async function findDestinationsPromise() {
   await client.connect();
   console.log("Connected successfully to server");
   const db = client.db(dbName);
-  const collection = db.collection("destinationsLight");
+  const collection = db.collection("destinationsLightMode");
 
   const findResult = await collection.find().toArray();
 
